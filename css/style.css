@@ -1,0 +1,79 @@
+.pic {
+  border-radius: 100%;
+  width: 50%;
+  border-style: inset;
+}
+.testimonials-image{
+  border-radius: 100%;
+  width: 15%;
+  border-style: inset;
+  margin: 20px;
+
+}
+
+.testimonials{
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #3C4048;
+  color: #fff;
+}
+.testimon{
+  font-family: 'Montserrat-bold', sans-serif;
+    color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+    text-align: center;
+}
+.name {
+  font-family: 'Sacramento', cursive;
+margin-top: 0;
+margin-bottom: 0;
+
+}
+.placeimg{
+  width: 50%;
+  border-style: none;
+}
+.placeimgpad{
+  margin: 5% 0 5%;
+}
+.down{
+  background-color: #C3F8FF;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.cr-down{
+  background-color: #C3F8FF;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+.comp-down{
+  background-color: #C3F8FF;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+.comp-image{
+  width: 10%;
+}
+.bott-line{
+  background-color:  #3C4048;
+  font-family: 'Montserrat-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 0px;
+    
+}
+.span{
+  font-weight: bold;
+  color: red;
+}
+.prop{
+    font-size: 30px;
+}
+.btn-down{
+  margin: 5% 3% 5% 0;
+}
+.slideimg{
+  padding: 2% 0 5%;
+}
+
+/* ************************************************** */

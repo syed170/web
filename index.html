@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CodePlay</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Carousel Template · Bootstrap v5.2</title>
+
+  <!-- fontawesome -->
+<script src="https://kit.fontawesome.com/c7acc9bd56.js" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+
+  <!-- jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- stylesheet CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css2/style.css">
+
+  <!-- favicon -->
+<link rel="icon" href="favicon.ico">
+  <!-- google Fonts CDN -->
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <style>
+
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 60s;
+    }
+
+    @keyframes fade {
+      from {opacity: .9}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+  </style>
+</head>
+<!-- ***********************  Body ***********************-->
+<body>
+
+<!-- ***********************  Nav Bar ***********************-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href=""><i class="fa-thin fa-camera-retro"></i> Kim Brand</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Downloads</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<!-- ***********************  Profile Pic ***********************-->
+
+<!-- <div class="down"> -->
+  <div class="container-fluid down">
+
+    <!-- Four columns of text below the carousel -->
+        <!-- Four columns of text below the carousel -->
+            <!-- Four columns of text below the carousel -->
+            <div class="container">
+
+<div class="row featurette container">
+
+                <div class="col-md-6">
+                  <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                  <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose.</p>
+                  <Center>
+                  <button type="button" class="btn btn-dark btn-lg btn-down"><i class="fa-brands fa-apple"></i> Download </button>
+                  <button type="button" class="btn btn-outline-dark btn-lg btn-down"><i class="fa-brands fa-google-play"></i> Download </button>
+                </Center>
+
+                </div>
+
+<div class="col-lg-6 slideimg">
+                  <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+                  <!-- <Center>
+                    <img class="placeimg placeimgpad" src="kim3.png" alt="Kim">
+                    <center>
+                    <h1 class="name">Angela</h1>
+                    <p class="prop"> I am <span class="span">Pro</span>grammer</p>
+                    </center>
+                  </Center> -->
+    <div class="mySlides fade">
+    <img src="nature.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+    <img src="mas.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+    <img src="ab.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"> ❮ </a>
+    <a class="next" onclick="plusSlides(1)"> ❯ </a>
+
+
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+</div>
+</div>
+
+              </div>
+      </div>
+<!-- </div> -->
+<!-- ***********************  Profile Pic ***********************-->
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container-fluid">
+
+    <!-- Four columns of text below the carousel -->
+        <!-- Four columns of text below the carousel -->
+            <!-- Four columns of text below the carousel -->
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <Center>
+                <img class="pic" src="rose.png" alt="Rose">
+
+          <h2 class="featurette-heading fw-normal lh-1">Rose</h2>
+          <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+        </Center>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <Center>
+                <img class="pic" src="kim.png" alt="Kim">
+
+          <h2 class="featurette-heading fw-normal lh-1">Kim</h2>
+          <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+        </Center>
+      </div>
+
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-6">
+        <Center>
+                <img class="pic" src="lisa.png" alt="Lisa">
+
+          <h2 class="featurette-heading fw-normal lh-1">Lisa</h2>
+          <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+        </Center>
+      </div>
+
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-3 col-md-6">
+        <Center>
+                <img class="pic" src="jisoo.png" alt="Jisoo">
+
+          <h2 class="featurette-heading fw-normal lh-1">Jisoo</h2>
+          <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+        </Center>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Four columns of text below the carousel -->
+        <!-- Four columns of text below the carousel -->
+            <!-- Four columns of text below the carousel -->
+
+<div>  <!-- / FEATURETTES container-->
+<hr>
+</div>
+<div class="container marketing">
+
+<!-- Three columns of text below the carousel -->
+  <!-- Three columns of text below the carousel -->
+    <!-- Three columns of text below the carousel -->
+<div class="row featurette container">
+  <!-- Three columns of text below the carousel -->
+    <!-- Three columns of text below the carousel -->
+    <div class="col-md-6">
+      <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    </div>
+
+    <div class="col-md-6">
+      <Center>
+        <img class="placeimg" src="jisoo.png" alt="Jisoo">
+      </Center>
+
+    </div>
+
+  </div>
+
+  <hr class="featurette-divider">
+  <!-- Three columns of text below the carousel -->
+    <!-- Three columns of text below the carousel -->
+  <div class="row featurette">
+
+    <div class="col-md-6 col-sm-12">
+      <Center>
+        <img class="placeimg" src="rose.png" alt="Rose">
+      </Center>
+
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette container">
+    <!-- Three columns of text below the carousel -->
+      <!-- Three columns of text below the carousel -->
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+
+      <div class="col-md-6">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <Center>
+          <img class="placeimg" src="lisa.png" alt="Lisa">
+        </Center>
+
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- Three columns of text below the carousel -->
+      <!-- Three columns of text below the carousel -->
+    <div class="row featurette">
+
+      <div class="col-md-6 col-sm-12">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <Center>
+          <img class="placeimg" src="kim.png" alt="Kim">
+        </Center>
+
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+    </div>
+
+<!-- / FEATURETTES container-->
+
+  <hr class="featurette-divider">
+</div><!-- /.container -->
+
+  <!-- /END THE FEATURETTES -->
+</div>
+
+<!-- Card -->
+
+<div class="featurette container">
+
+<div class="row">
+
+
+<!-- Card 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="card-header py-3">
+  <h4 class="my-0 fw-normal">Free</h4>
+</div>
+<div class="card-body">
+  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+  <ul class="list-unstyled mt-3 mb-4">
+    <li>10 users included</li>
+    <li>2 GB of storage</li>
+    <li>Email support</li>
+    <li>Help center access</li>
+  </ul>
+  <button type="button" class="w-100 btn btn-lg btn-outline-dark">Sign up for free</button>
+</div>
+</div>
+<!-- Card 1 -->
+
+<!-- Card 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="card-header py-3">
+  <h4 class="my-0 fw-normal">Pro</h4>
+</div>
+<div class="card-body">
+  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+  <ul class="list-unstyled mt-3 mb-4">
+    <li>20 users included</li>
+    <li>10 GB of storage</li>
+    <li>Priority email support</li>
+    <li>Help center access</li>
+  </ul>
+  <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
+</div>
+</div>
+<!-- Card 2 -->
+
+<!-- Card 3 -->
+<div class="col-lg-4 ">
+<div class="card-header py-3 text-bg-primary border-primary">
+  <h4 class="my-0 fw-normal">Enterprise</h4>
+</div>
+<div class="card-body">
+  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+  <ul class="list-unstyled mt-3 mb-4">
+    <li>30 users included</li>
+    <li>15 GB of storage</li>
+    <li>Phone and email support</li>
+    <li>Help center access</li>
+  </ul>
+  <button type="button" class="w-100 btn btn-lg btn-dark">Contact us</button>
+</div>
+</div>
+<!-- Card 3 -->
+
+</div>
+</div>
+
+
+
+
+<div class="container-fluid cr-down">
+<div class="container">
+
+<!-- <section class="testimonials"> -->
+<center>
+  <p >Don't ask why it has to be you, just stay with me. Blackpink is number one. We will continue to work hard to revive much </p>
+  <p>love and support from fans.</p>
+
+  <img class="testimonials-image"src="rose3.png" alt="">
+  <em>Love and Support</em>
+</center>
+
+<!-- </section> -->
+</div>
+</div>
+
+<div class="container-fluid comp-down ">
+
+  <div>
+    <center>
+    <img class="comp-image" src="techcrunch.png" alt="">
+    <img class="comp-image" src="thenextweb.png" alt="">
+    <img class="comp-image" src="Mashable.png" alt="">
+  </center>
+  </div>
+</div>
+
+<div class="container-fluid  bott-line">
+<center>
+<p>Don't ask why it has to be you, just stay with me. Blackpink is number one. We will continue to work hard to revive much love and support from fans.</p>
+</center>
+</div>
+
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+
+</footer>
+</main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
